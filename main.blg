@@ -4,50 +4,62 @@ The top-level auxiliary file: main.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: acknowledgments.aux
 A level-1 auxiliary file: notation.aux
-A level-1 auxiliary file: introduktion.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: theory.aux
+A level-1 auxiliary file: method.aux
 A level-1 auxiliary file: resultat.aux
 A level-1 auxiliary file: avrundning.aux
 A level-1 auxiliary file: detaljer.aux
+A level-1 auxiliary file: rtthesis-doc.aux
 Database file #1: IEEEfull.bib
 Database file #2: myrefs.bib
-You've used 1 entry,
+Warning--entry type for "OpenType" isn't style-file defined
+--line 29 of file myrefs.bib
+Warning--entry type for "TrueType" isn't style-file defined
+--line 37 of file myrefs.bib
+Warning--entry type for "FreeType" isn't style-file defined
+--line 45 of file myrefs.bib
+Warning--I didn't find a database entry for "Duck:2005"
+Warning--empty publisher in PFNP
+You've used 25 entries,
             2773 wiz_defined-function locations,
-            1013 strings with 16197 characters,
-and the built_in function-call counts, 424 in all, are:
-= -- 38
-> -- 10
-< -- 1
-+ -- 4
-- -- 3
-* -- 31
-:= -- 69
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 4
-chr.to.int$ -- 1
-cite$ -- 2
-duplicate$ -- 20
-empty$ -- 41
-format.name$ -- 4
-if$ -- 83
+            1187 strings with 20549 characters,
+and the built_in function-call counts, 10807 in all, are:
+= -- 1011
+> -- 462
+< -- 24
++ -- 163
+- -- 138
+* -- 787
+:= -- 1635
+add.period$ -- 97
+call.type$ -- 25
+change.case$ -- 119
+chr.to.int$ -- 25
+cite$ -- 51
+duplicate$ -- 544
+empty$ -- 982
+format.name$ -- 175
+if$ -- 2333
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 7
+missing$ -- 26
+newline$ -- 150
+num.names$ -- 100
+pop$ -- 256
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 95
 quote$ -- 0
-skip$ -- 14
+skip$ -- 407
 stack$ -- 0
-substring$ -- 27
-swap$ -- 1
-text.length$ -- 0
+substring$ -- 402
+swap$ -- 73
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 11
-warning$ -- 0
-while$ -- 5
+type$ -- 250
+warning$ -- 1
+while$ -- 102
 width$ -- 0
-write$ -- 20
+write$ -- 366
+(There were 5 warnings)

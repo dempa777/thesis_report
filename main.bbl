@@ -1,14 +1,177 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Duck(2005)]{Duck:2005}
-Donald Duck.
-\newblock The history of automatic control.
-\newblock \emph{Duckburg Journal of Science}, 106\penalty0 (3):\penalty0
-  345--401, 2005.
+\bibitem[{Apple Inc.}(2015)]{TrueType}
+{Apple Inc.}
+\newblock Truetype\texttrademark reference manual, 2015.
+\newblock URL
+  \url{https://developer.apple.com/fonts/TrueType-Reference-Manual/}.
+
+\bibitem[Chen et~al.(2007)Chen, Zhou, Shu, Su, and Paul]{xiaodiao}
+Xiao-Diao Chen, Yin Zhou, Zhenyu Shu, Hua Su, and J.-C. Paul.
+\newblock Improved algebraic algorithm on point projection for beziércurves.
+\newblock In \emph{Computer and Computational Sciences, 2007. IMSCCS 2007.
+  Second International Multi-Symposiums on}, pages 158--163, Aug 2007.
+\newblock \doi{10.1109/IMSCCS.2007.17}.
+
+\bibitem[Cuisenaire and Macq(1999)]{cuisenaire}
+Olivier Cuisenaire and Beno{\^\i}t Macq.
+\newblock Fast euclidean distance transformation by propagation using multiple
+  neighborhoods.
+\newblock \emph{Computer Vision and Image Understanding}, 76\penalty0
+  (2):\penalty0 163--172, 1999.
+
+\bibitem[Danielsson(1980)]{Danielsson}
+Per-Erik Danielsson.
+\newblock Euclidean distance mapping.
+\newblock \emph{Computer Graphics and Image Processing}, 14\penalty0
+  (3):\penalty0 227 -- 248, 1980.
+\newblock ISSN 0146-664X.
+\newblock \doi{http://dx.doi.org/10.1016/0146-664X(80)90054-4}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/0146664X80900544}.
+
+\bibitem[Eggers(1998)]{eggers}
+Hinnik Eggers.
+\newblock Two fast euclidean distance transformations in z 2 based on
+  sufficient propagation.
+\newblock \emph{Computer Vision and Image Understanding}, 69\penalty0
+  (1):\penalty0 106--116, 1998.
+
+\bibitem[Fabbri et~al.(2008)Fabbri, Costa, Torelli, and Bruno]{edtcompare}
+Ricardo Fabbri, Luciano Da~F. Costa, Julio~C. Torelli, and Odemir~M. Bruno.
+\newblock 2d euclidean distance transform algorithms: A comparative survey.
+\newblock \emph{ACM Comput. Surv.}, 40\penalty0 (1):\penalty0 2:1--2:44,
+  February 2008.
+\newblock ISSN 0360-0300.
+\newblock \doi{10.1145/1322432.1322434}.
+\newblock URL \url{http://doi.acm.org/10.1145/1322432.1322434}.
+
+\bibitem[Fischer(2000)]{fischer2000}
+Kaspar Fischer.
+\newblock Piecewise linear approximation of bezier curves.
+\newblock In \emph{HTTP://HCKLBRRFNN. WORDPRESS.
+  COM/2012/08/20/PIECEWISE-LINEAR-APPROXIMATION-OF-BEZIER-CURVES/}. Citeseer,
+  2000.
+
+\bibitem[FreeType(2014)]{FreeType}
+FreeType.
+\newblock Freetype outlines, 2014.
+\newblock URL
+  \url{http://www.freetype.org/freetype2/docs/glyphs/glyphs-6.html}.
+
+\bibitem[Green(2007)]{Green:2007}
+Chris Green.
+\newblock Improved alpha-tested magnification for vector textures and special
+  effects.
+\newblock In \emph{ACM SIGGRAPH 2007 Courses}, SIGGRAPH '07, pages 9--18, New
+  York, NY, USA, 2007. ACM.
+\newblock ISBN 978-1-4503-1823-5.
+\newblock \doi{10.1145/1281500.1281665}.
+\newblock URL \url{http://doi.acm.org/10.1145/1281500.1281665}.
+
+\bibitem[Gustavson and Strand(2011)]{Gustavson:2011}
+Stefan Gustavson and Robin Strand.
+\newblock Anti-aliased euclidean distance transform.
+\newblock \emph{Pattern Recognition Letters}, 32\penalty0 (2):\penalty0 252 --
+  257, 2011.
+\newblock ISSN 0167-8655.
+\newblock \doi{http://dx.doi.org/10.1016/j.patrec.2010.08.010}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0167865510002953}.
+
+\bibitem[Jones et~al.(2006)Jones, Baerentzen, and Sramek]{Jones2006}
+M.~Jones, J.A. Baerentzen, and M.~Sramek.
+\newblock 3d distance fields: a survey of techniques and applications.
+\newblock \emph{Visualization and Computer Graphics, IEEE Transactions on},
+  12\penalty0 (4):\penalty0 581--599, July 2006.
+\newblock ISSN 1077-2626.
+\newblock \doi{10.1109/TVCG.2006.56}.
+
+\bibitem[Khalil(2002)]{Khalil02NonlinearSystemsBook}
+Hassan~K. Khalil.
+\newblock \emph{Nonlinear systems}.
+\newblock Prentice Hall, Inc., third edition, 2002.
+
+\bibitem[Lotufo and Zampirolli(2001)]{lotufo}
+Roberto~A Lotufo and Francisco~A Zampirolli.
+\newblock Fast multidimensional parallel euclidean distance transform based on
+  mathematical morphology.
+\newblock In \emph{Computer Graphics and Image Processing, 2001 Proceedings of
+  XIV Brazilian Symposium on}, pages 100--105. IEEE, 2001.
+
+\bibitem[Maurer~Jr et~al.(2001)Maurer~Jr, Raghavan, and Qi]{maurer}
+Calvin~R Maurer~Jr, Vijay Raghavan, and Rensheng Qi.
+\newblock A linear time algorithm for computing the euclidean distance
+  transform in arbitrary dimensions.
+\newblock In \emph{Information Processing in Medical Imaging}, pages 358--364.
+  Springer, 2001.
+
+\bibitem[Meijster et~al.(2000)Meijster, Roerdink, and Hesselink]{meijster}
+Arnold Meijster, Jos~BTM Roerdink, and Wim~H Hesselink.
+\newblock A general algorithm for computing distance transforms in linear time.
+\newblock In \emph{Mathematical Morphology and its applications to image and
+  signal processing}, pages 331--340. Springer, 2000.
+
+\bibitem[{Microsoft Corporation}(2015)]{OpenType}
+{Microsoft Corporation}.
+\newblock Opentype specification, 2015.
+\newblock URL \url{https://www.microsoft.com/typography/otspec/default.htm}.
+
+\bibitem[Mori(2007)]{Mori07Tables}
+Lapo~Filippo Mori.
+\newblock Tables in {\LaTeXe}: Packages and methods.
+\newblock \emph{The {Prac\TeX} Journal}, 2007\penalty0 (1), 2007.
+\newblock URL \url{http://tug.org/pracjourn/2007-1/mori}.
+
+\bibitem[Phinney(2001)]{phinney2001}
+Thomas~W Phinney.
+\newblock Truetype, postscript type 1, \& opentype: What’s the difference,
+  2001.
+
+\bibitem[Ragnemalm(1993)]{Ragnemalm:1993}
+Ingemar Ragnemalm.
+\newblock \emph{The Euclidean Distance Transform}.
+\newblock Linköping Studies in Science and Technology, first edition, 1993.
+\newblock ISBN 91-7871-083-9.
+
+\bibitem[Ragnemalm(2008)]{PFNP}
+Ingemar Ragnemalm.
+\newblock \emph{Polygons feel no pain}.
+\newblock First edition, 2008.
+
+\bibitem[Rosenfeld and Pfaltz(1966)]{rosenfeld1966}
+Azriel Rosenfeld and John~L Pfaltz.
+\newblock Sequential operations in digital picture processing.
+\newblock \emph{Journal of the ACM (JACM)}, 13\penalty0 (4):\penalty0 471--494,
+  1966.
+
+\bibitem[Rugh(1996)]{Rugh96LinearSystemsBook}
+Wilson~J. Rugh.
+\newblock \emph{Linear system theory}.
+\newblock Prentice-Hall, Inc., second edition, 1996.
+
+\bibitem[Ryćko and Jackowski(1993)]{RyckoJackowski93TeXIndentPar}
+Marek Ryćko and Bugosław Jackowski.
+\newblock {\TeX} from {\textbackslash}indent to {\textbackslash}par.
+\newblock \emph{TUGboat}, 14\penalty0 (3), 1993.
+\newblock URL \url{http://www.tug.org/TUGboat/Articles/tb14-3/tb40rycko.pdf}.
+
+\bibitem[Saito and Toriwaki(1994)]{saito}
+Toyofumi Saito and Jun-Ichiro Toriwaki.
+\newblock New algorithms for euclidean distance transformation of an
+  n-dimensional digitized picture with applications.
+\newblock \emph{Pattern recognition}, 27\penalty0 (11):\penalty0 1551--1565,
+  1994.
+
+\bibitem[Shreiner et~al.(2009)Shreiner, Group, et~al.]{shreiner2009opengl}
+Dave Shreiner, Bill The Khronos OpenGL ARB~Working Group, et~al.
+\newblock \emph{OpenGL programming guide: the official guide to learning
+  OpenGL, versions 3.0 and 3.1}.
+\newblock Pearson Education, 2009.
 
 \end{thebibliography}

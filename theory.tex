@@ -1,0 +1,95 @@
+\chapter{Background}\label{cha:theory}
+This chapter includes relevant background information about the main topics of this report. The purpose of the chapter is to give the reader some basic knowledge and undersstanding about the touched topics to facilitate further reading of the report.
+\section{Computer graphics}\label{computergraphics}
+Computer graphics is good. 
+\section{Basic text rendering}\label{textrendering}
+Text rendering is a non trivial subject in computer graphics and has been for a long time. There are many different ways to render text to a screen. A common way is to pre render all the glyphs of a font to an image. Characters of this font can then be rendered by using a part of the image as texture for a polygon. Another way is to use some library to render the text to an image and use it to texture a quad \citep{FreeType}. Both of the above mentioned methods has some drawback, for example the text can not be scaled up without losing the smooth edges and the images takes a lot of memory if you want to have high resolution text.
+
+When rendering a text it is really important that every glyph is positioned to eachother as specified in the font file. Every glyph in a font has data stored in the font with information. For example the OpenType and the TrueType\texttrademark{} font format has information about of advance, kerning, height, widht etc\citep{OpenType, TrueType}. 
+\section{Distance fields}\label{distancefield}
+Binary images is used frequently in image processing \citep{Ragnemalm:1993}. A binary image is an image with only one binary value for each pixel. This will limit the image to only contain two values or colors. One example of an image that could be represented as a binary image is a picture of a white letter on a black background. In this case white would be represented as 0 and black as 1 or vice versa.
+
+A distance transform is the transform of an input binary image to an output image called distance field or distance map \citep{rosenfeld1966}. The values of the distance field pixels represents the closest distance by some distance metric to an arbitrary shape in the input image. The distance metric can differ between different applications but the most commonly used distance metric is the euclidean distance metrics which is also called real distance. If euclidean distance metrics is used when doing the distance transform it is called euclidean distance transform(EDT). Other distance metrics that can be used in distance transforms is the city-block distance metric and the chessboard distance metric. When using city-block distances you are only allowed to travel horizontally or vertically in a grid and with the cost 1. Chessboard distance is an extension of city-block distance where you are also allowed to travel diagonally with the cost of 1. 
+
+A distance field can be signed or unsigned. An unsigned distance field only maps the distances either inside the shape or outside the shape while a signed distance field maps the pixels inside the shape with negative distances and the outside of the shape with positive distances or vice versa.
+
+Distance fields has many good advantages compared to other methods for storing shapes like boundary representation. One of the most obvious advantages is that a distance field represents more than just the boundary. For example a signed distance field also represents the environment around the boundary, both the interior and the exterior. This makes it easy to check if a point is inside or outside a shape by checking the value of that point in the distance field. It is also easy to move the boundary of the object by just changing the threshold value determining where the boundary is located. \citep{Jones2006}
+
+\section{Beziér curves}\label{bezier}
+A beziér curve is defined in space or the plane as two endpoints and a number of control points which is blended together with one blending functions per point. The number of control points depends on the degree of the beziér curve. The most commonly used beziér curves is the cubic beziér with four points and the quadratic beziér with three points. A cubic beziér is defined as:\vspace{\baselineskip}\newline
+\begin{math}
+	B(t) = (1 - t)^3P_0 + 3t(1 - t)^2P_1 + 3t^2(1 - t)P_2 + t^3P_3, 
+\end{math} \vspace{\baselineskip}\newline
+where \begin{math}t\in[0, 1], \end{math} \begin{math}P_0\end{math} and \begin{math}P_3\end{math} are the endpoints of the beziér and \begin{math}P_1\end{math} and \begin{math}P_2\end{math} are the control points of the beziér. The sum of the blending functions is always equal to 1 for any t in the function domain.\citep{PFNP}
+
+A bezier curve can not represent arbitrary curves, therefore it is important to be able to connect several beziers to a path to be able to describe more complex shapes. When connecting curves, continuity between the curves is an important concept have in mind. Parametric continuity is a measure that will have grave importance of the appearance of the curve. There are three levels of parametric continuity.\vspace{\baselineskip}\newline
+\begin{math}C^0\end{math} = The curves meet\newline
+\begin{math}C^1\end{math} = The derivative for the both curves is equal where the curves meet\newline
+\begin{math}C^2\end{math} = The second derivative for the both curves is equal where the curves meet\vspace{\baselineskip} \newline
+Another measure than can be used for continuity is geometric continuity which is almost the same as parametric continuity. The only difference is that geometric continuity only require the derivatives of \begin{math}G^1\end{math} and \begin{math}G^2\end{math} to be proportional and not equal. Given two cubic beziér curves p defined by \begin{math}p_1\end{math}, \begin{math}p_2\end{math}, \begin{math}p_3\end{math} and \begin{math}p_4\end{math} and q defined by \begin{math}q_1\end{math}, \begin{math}q_2\end{math}, \begin{math}q_3\end{math} and \begin{math}q_4\end{math}. Assume that p and q is placed in a way that \begin{math}p_4=q_1\end{math}. This will trivially fulfill the requirement for \begin{math}C^0\end{math} because they share one endpoint and \begin{math}p(1)=q(0)\end{math}. \begin{math}C^1\end{math} continuity, \begin{math}p'(1)=q'(0)\end{math} will be fulfilled if \begin{math}p_3\end{math}, \begin{math}p_4\end{math} and \begin{math}q_1\end{math} is located on the same line. C2 continuity \begin{math}p''(1)=q''(0)\end{math} will be fulfilled if  \begin{math}p_3\end{math}, \begin{math}p_4\end{math} and \begin{math}q_1\end{math} is located on the same line and \begin{math}|p_4 - p_3| = |q_2 - q_1|\end{math} meaning that the distance from \begin{math}p_3\end{math} to \begin{math}p_4\end{math} must be equal to the distance from \begin{math}p_4\end{math} to \begin{math}q_2\end{math}.
+
+An example of an application of beziérs is fonts. Every glyph in a font is stored as a number of straight lines and bezier curves, either cubic or quadratic.\citep{phinney2001} Even though beziérs is used in fonts it is not a trivial problem to draw a beziér to the screen. Beziér curves is hard to draw because at the lowest level graphics hardware can only draw polygons and line segments. This is solved by approximating smooth curves to line segments before drawing. \citep{shreiner2009opengl} Another problem with beziér curves is that it time consuming to find the closest point on the beziér curve given an arbitrary point. To solve this problem \begin{math}(p-q(t))q'(t)=0,\end{math} where \begin{math}t\in[0, 1] \end{math}, p is a point in space and q is a beziér curve, has to be solved\citep{xiaodiao}. This implies that a quintic polynomial needs to be solved to find the closest point on a cubic beziér curve given a point in space. This is another reason why another representation like line segments is much easier to work with in applications like computer graphics.
+
+De Casteljau’s algorithm can be used to subdivide a bezier curve recursively by using the properties of bezier curves to calculate new beziér points for both the left and the right part of the old beziér.\citep{fischer2000} A special case of the algorithm is to divide the curve at \begin{math}t=0.5\end{math} which gives a first curve \begin{math}t\in[0, 0.5]\end{math} and a second curve \begin{math}t\in[0.5, 1]\end{math}. An example of this subdivision is presented in figure XXX below, where the first curve is described by the points \begin{math}p_0\end{math}, \begin{math}p_{01}\end{math}, \begin{math}p_{012}\end{math} and \begin{math}p_{0123}\end{math} and the second curve is described by \begin{math}p_{0123}\end{math}, \begin{math}p_{123}\end{math}, \begin{math}p_{23}\end{math} and \begin{math}p_{3}\end{math} is derived from the initial curve described by \begin{math}p_{0}\end{math}, \begin{math}p_{1}\end{math}, \begin{math}p_{2}\end{math} and \begin{math}p_{3}\end{math}. The following calculations shows how the points is computed.\vspace{\baselineskip}\newline
+\begin{math}
+	P_{01}=\frac{P_0+P_1}{2}\newline
+	P_{23}=\frac{P_2+P_3}{2}\newline
+	P_{12}=\frac{P_1+P_2}{2}\newline
+	P_{012}=\frac{P_{01}+P_{12}}{2}\newline
+	P_{123}=\frac{P_{12}+P_{23}}{2}\newline
+	P_{0123}=\frac{P_{012}+P_{123}}{2}
+\end{math}\vspace{\baselineskip}\newline
+
+
+\chapter{Related work}\label{cha:relatedwork}
+\section{Early EDT algorithms}\label{earlyedt}
+In a very often mentioned article \citet{Danielsson} proposed an improved way to generate distance maps by representing the output of the distance transform as a vector, separating the distance of the different dimensions. Danielsson also proposed two sequential algorithms 4SED (4-point Sequential Euclidean Distance mapping) and 8SED (8-point Sequential Euclidean Distance mapping) for calculating the EDT using his representation of distance. Both the 4SED algorithm and the 8SED algorithm consists of 2 consecutive picture scans where they incrementally update pixel values depending on nearby pixels. The 8SED algorithm is described in the following pseudocode.\newpage
+
+\begin{algorithm}[H]
+\KwData{M: Width, N: Height, L: Binary image of size MxN}
+\KwResult{L: Distance field}
+initialization\;
+\For{$j = 1$ to $N-1$ step $1$}{
+	\For{$i = 0$ to $M-1$ step $1$}{
+		L(i, j) = min(L(i, j), L(i-1, j-1)+(1, 1), L(i, j-1)+(0+1), L(i+1, j-1)+(1,1))\;
+	}
+	\For{$i = 1$ to $M-1$ step $1$}{
+		L(i, j) = min(L(i, j), L(i-1, j)+(1, 0))\;
+	}
+	\For{$i = M-2$ to $0$ step $1$}{
+		L(i, j) = min(L(i, j), L(i+1, j)+(1, 0))\;
+	}
+}
+\caption{First scan of the 8SED algorithm}
+\end{algorithm}
+\begin{algorithm}[H]
+\KwData{M: Width, N: Height, L: Binary image of size MxN}
+\KwResult{L: Distance field}
+initialization\;
+\For{$j = N-2$ to $0$ step $1$}{
+	\For{$i = 0$ to $M-1$ step $1$}{
+		L(i, j) = min(L(i, j), L(i-1, j+1)+(1, 1), L(i, j+1)+(0, 1), L(i+1, j+1)+(1, 1))\;
+	}
+	\For{$i = 1$ to $M-1$ step $1$}{
+		L(i, j) = min(L(i, j), L(i-1, j)+(1, 0))\;
+	}
+	\For{$i = M-2$ to $0$ step $1$}{
+		L(i, j) = min(L(i, j), L(i+1, j)+(1, 0))\;
+	}
+}
+\caption{Second scan of the 8SED algorithm}
+\end{algorithm}
+
+The two scans are very similar. The only difference is that the first scan is done top down evaluating the pixels below and on the sides of the current pixel and the second scan is done bottom up evaluating the pixels above and on the sides of the current pixel\citep{Ragnemalm:1993}. The 4SED algorithm and the 8SED algorithm are not error free as \citet{Danielsson} proves in his article but he also claims that the errors are rare and small and is negligible for practical purposes.
+\section{Exact EDT algorithms}\label{exactEDT}
+Distance transforms has been used in different applications in many years. The article from \citet{Danielsson} was not the first on the subject but the fact that the algorithms he proposed in his article are some of the most widely used\citep{edtcompare} makes it easy to call Danielsson one of the pionjeers on the subject. As mentioned earlier in this report, 8SED and 4SED is not exact. Exact algorithms for EDT has only been around since about the 1990s. In an article \citet{edtcompare} compares the execution time of exact EDT algorithms. The 6 algorithms compared in the test is \citet{meijster}, \citet{maurer}, \citet{eggers}, \citet{lotufo}, \citet{cuisenaire} and \citet{saito}. The conclusion of the comparison is that the algorithms from Meijster and Maurer are the fastest but Meijster's algorithm is preferred due to slightly better performance and the fact that it is easier to implement than Maurer's algorithm.
+
+Meijster's algorithm consist of two separate phases. The first phase iterates through each column performing a distance propagation in both directions. This will create a new image \begin{math}g(i, j)\end{math} which used in the second phase. The second phase iterates through each row left to right and right to left applying a function \begin{math}DT(x, y)\end{math} to calculate the output value of each pixel. The function depends on what distance metric is used. The function used for euclidean distance transform follows.\vspace{\baselineskip}\newline
+\begin{math}
+	DT(x, y) = \min\limits_{0\dots m}((x-i)^2+g(i)^2)
+\end{math}\vspace{\baselineskip}\newline
+
+\section{Limitations of EDT algorithms}\label{limitEDT}
+Calculating a distance transform of large size images can be very time consuming. There is a significant difference in computation time between creating a distance map from a 4096x4096 image and creating a distance map from a 64x64 image. For example, the 8SED and the 4SED algorithms both has time complexity O(n) where n is the number of pixels. Time complexity O(n) means that every pixel is visited a constant number of times when transforming the image. Assuming every pixel is visited once and one calculation is done per visit the larger image would require 4096 times more calculations than the smaller image. In an article from \citet{Green:2007}, distance fields was generated by using a 4096x4096 binary image of a glyph as input to a distance transform. The output from the distance transform was then downsampled to a 64x64 texture. Generating a distance field using a large input image makes the discrete set of possible boundary pixels more dense compared to if a smaller input image is used. The increased density of the possible pixel set helps decrease the calculation error of the distance field assuming subpixel distance measures is not used.
+
+In an article, \citet{Gustavson:2011} showed that the calculation errors of distance transforms can be decreased by using information about the subpixel boundary between the foreground and background pixels. In the article they use an anti-aliased input image to be able to locate the boundary in the pixels to get more precise distance measures between the pixel and the boundary. They show that they get approximately the same amount of errors using their method on a 16x16 times smaller input image than by using the method Chris Green proposed in his article. The smaller input image increases the the execution time and decreases the memory consumption by a factor of approximately 30 times according to Gustavson and Strand.

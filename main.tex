@@ -12,7 +12,8 @@
 ]{rtthesis}
 
 \usepackage{mythesis}
-
+\usepackage[]{algorithm2e}
+\usepackage{amsmath}
 
 \begin{document}
 \selectlanguage{english}
@@ -33,17 +34,17 @@
 
 \mainmatter
 \include{introduction}
-\include{background}
+\include{theory}
+\include{method}
 \include{resultat}
 \include{avrundning}
 
 \part*{Appendix}
 \appendix
 \include{detaljer}
-%\include{rtthesis-doc}
+\include{rtthesis-doc}
 
 \backmatter
-
 \bibliography{IEEEfull,myrefs}
 
 \printindex
