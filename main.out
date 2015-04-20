@@ -14,52 +14,14 @@
 \BOOKMARK [0][]{chapter.3}{3 Related work}{}% 14
 \BOOKMARK [1][-]{section.3.1}{3.1 Early EDT algorithms}{chapter.3}% 15
 \BOOKMARK [1][-]{section.3.2}{3.2 Exact EDT algorithms}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.3}{3.3 Limitations of EDT algorithms}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.3}{3.3 Improved distance measure for EDT algorithms}{chapter.3}% 17
 \BOOKMARK [0][]{chapter.4}{4 Method}{}% 18
-\BOOKMARK [0][]{chapter.5}{5 Resultat}{}% 19
-\BOOKMARK [1][-]{section.5.1}{5.1 Ditten}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.2}{5.2 Framtiden}{chapter.5}% 21
-\BOOKMARK [1][-]{section.1.5.A}{5.A Ett par l\345nga bevis}{chapter.5}% 22
-\BOOKMARK [0][]{chapter.6}{6 Avslutande kommentarer}{}% 23
-\BOOKMARK [0][]{appendix.A}{A Trista saker}{}% 24
-\BOOKMARK [1][-]{section.A.1}{A.1 B\344dda s\344ngen}{appendix.A}% 25
-\BOOKMARK [1][-]{section.A.2}{A.2 Diska}{appendix.A}% 26
-\BOOKMARK [0][]{appendix.B}{B rtthesis documentation and LaTeX tips}{}% 27
-\BOOKMARK [1][-]{section.B.1}{B.1 Basic setup}{appendix.B}% 28
-\BOOKMARK [1][-]{section.B.2}{B.2 Page layout and related options}{appendix.B}% 29
-\BOOKMARK [1][-]{section.B.3}{B.3 Front-matter environments}{appendix.B}% 30
-\BOOKMARK [1][-]{section.B.4}{B.4 Abbreviations}{appendix.B}% 31
-\BOOKMARK [1][-]{section.B.5}{B.5 Definitions}{appendix.B}% 32
-\BOOKMARK [1][-]{section.B.6}{B.6 Theorem titles}{appendix.B}% 33
-\BOOKMARK [1][-]{section.B.7}{B.7 To share or not to share counters}{appendix.B}% 34
-\BOOKMARK [1][-]{section.B.8}{B.8 Completely customized theorem-like environments}{appendix.B}% 35
-\BOOKMARK [1][-]{section.B.9}{B.9 The example environment}{appendix.B}% 36
-\BOOKMARK [1][-]{section.B.10}{B.10 Captions}{appendix.B}% 37
-\BOOKMARK [1][-]{section.B.11}{B.11 Hyperlinks}{appendix.B}% 38
-\BOOKMARK [2][-]{subsection.B.11.1}{B.11.1 Basic setup}{section.B.11}% 39
-\BOOKMARK [2][-]{subsection.B.11.2}{B.11.2 Hyperlinks and electronic publishing}{section.B.11}% 40
-\BOOKMARK [2][-]{subsection.B.11.3}{B.11.3 Page number formatting in the index}{section.B.11}% 41
-\BOOKMARK [2][-]{subsection.B.11.4}{B.11.4 Friendlier hyperlinks}{section.B.11}% 42
-\BOOKMARK [1][-]{section.B.12}{B.12 Backreferences from the bibliography}{appendix.B}% 43
-\BOOKMARK [1][-]{section.B.13}{B.13 Using the bibentry package}{appendix.B}% 44
-\BOOKMARK [1][-]{section.B.14}{B.14 Fonts}{appendix.B}% 45
-\BOOKMARK [1][-]{section.B.15}{B.15 Hanging punctuation}{appendix.B}% 46
-\BOOKMARK [1][-]{section.B.16}{B.16 Paragraph breaks}{appendix.B}% 47
-\BOOKMARK [1][-]{section.B.17}{B.17 Page breaks}{appendix.B}% 48
-\BOOKMARK [1][-]{section.B.18}{B.18 Input encoding}{appendix.B}% 49
-\BOOKMARK [1][-]{section.B.19}{B.19 rtthesis and natbib}{appendix.B}% 50
-\BOOKMARK [1][-]{section.B.20}{B.20 The lists of previous theses}{appendix.B}% 51
-\BOOKMARK [1][-]{section.B.21}{B.21 Compilation theses}{appendix.B}% 52
-\BOOKMARK [2][-]{subsection.B.21.1}{B.21.1 Including publications in your thesis}{section.B.21}% 53
-\BOOKMARK [2][-]{subsection.B.21.2}{B.21.2 Compilation theses and bibliographies}{section.B.21}% 54
-\BOOKMARK [1][-]{section.B.22}{B.22 Master's theses}{appendix.B}% 55
-\BOOKMARK [2][-]{subsection.B.22.1}{B.22.1 Master's thesis setup}{section.B.22}% 56
-\BOOKMARK [2][-]{subsection.B.22.2}{B.22.2 Special pages}{section.B.22}% 57
-\BOOKMARK [2][-]{subsection.B.22.3}{B.22.3 Choice of language}{section.B.22}% 58
-\BOOKMARK [1][-]{section.B.23}{B.23 Compiling the document}{appendix.B}% 59
-\BOOKMARK [1][-]{section.B.24}{B.24 Generating a thesis cover and the \215spikblad\216}{appendix.B}% 60
-\BOOKMARK [1][-]{section.B.25}{B.25 Required logotypes \(not included with rtthesis\)}{appendix.B}% 61
-\BOOKMARK [1][-]{section.B.26}{B.26 Compatibility with standard packages}{appendix.B}% 62
-\BOOKMARK [0][]{appendix*.26}{Bibliography}{}% 63
-\BOOKMARK [0][]{appendix*.26}{Index}{}% 64
-\BOOKMARK [0][]{Copyright.0}{Copyright}{}% 65
+\BOOKMARK [1][-]{section.4.1}{4.1 Distance field generation initial attempt}{chapter.4}% 19
+\BOOKMARK [0][]{chapter.5}{5 Resultat}{}% 20
+\BOOKMARK [1][-]{section.5.1}{5.1 Ditten}{chapter.5}% 21
+\BOOKMARK [1][-]{section.5.2}{5.2 Framtiden}{chapter.5}% 22
+\BOOKMARK [1][-]{section.1.5.A}{5.A Ett par l\345nga bevis}{chapter.5}% 23
+\BOOKMARK [0][]{chapter.6}{6 Avslutande kommentarer}{}% 24
+\BOOKMARK [0][]{chapter*.9}{Bibliography}{}% 25
+\BOOKMARK [0][]{chapter*.9}{Index}{}% 26
+\BOOKMARK [0][]{Copyright.0}{Copyright}{}% 27

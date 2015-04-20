@@ -10,59 +10,21 @@
 \contentsline {chapter}{\numberline {2}Background}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Computer graphics}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Basic text rendering}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}Distance fields}{4}{section.2.3}
-\contentsline {section}{\numberline {2.4}Bezi\IeC {\'e}r curves}{4}{section.2.4}
-\contentsline {chapter}{\numberline {3}Related work}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Early EDT algorithms}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Exact EDT algorithms}{8}{section.3.2}
-\contentsline {section}{\numberline {3.3}Limitations of EDT algorithms}{9}{section.3.3}
-\contentsline {chapter}{\numberline {4}Method}{11}{chapter.4}
-\contentsline {chapter}{\numberline {5}Resultat}{13}{chapter.5}
-\contentsline {section}{\numberline {5.1}Ditten}{13}{section.5.1}
-\contentsline {section}{\numberline {5.2}Framtiden}{13}{section.5.2}
-\contentsline {section}{\numberline {5.A}Ett par l\IeC {\r a}nga bevis}{16}{section.1.5.A}
-\contentsline {chapter}{\numberline {6}Avslutande kommentarer}{17}{chapter.6}
-\contentsline {chapter}{\numberline {A}Trista saker}{21}{appendix.A}
-\contentsline {section}{\numberline {A.1}B\IeC {\"a}dda s\IeC {\"a}ngen}{21}{section.A.1}
-\contentsline {section}{\numberline {A.2}Diska}{21}{section.A.2}
-\contentsline {chapter}{\numberline {B}\emph {{\fontsize {0.9em}{1\baselineskip }\selectfont \unhbox \voidb@x \hbox {\textsf {rtthesis}}}}\xspace documentation and \LaTeX {} tips}{23}{appendix.B}
-\contentsline {section}{\numberline {B.1}Basic setup}{23}{section.B.1}
-\contentsline {section}{\numberline {B.2}Page layout and related options}{24}{section.B.2}
-\contentsline {section}{\numberline {B.3}Front-matter environments}{26}{section.B.3}
-\contentsline {section}{\numberline {B.4}Abbreviations}{27}{section.B.4}
-\contentsline {section}{\numberline {B.5}Definitions}{27}{section.B.5}
-\contentsline {section}{\numberline {B.6}Theorem titles}{30}{section.B.6}
-\contentsline {section}{\numberline {B.7}To share or not to share counters}{30}{section.B.7}
-\contentsline {section}{\numberline {B.8}Completely customized theorem-like environments}{30}{section.B.8}
-\contentsline {section}{\numberline {B.9}The \unhbox \voidb@x \hbox {\texttt {example}} environment}{31}{section.B.9}
-\contentsline {section}{\numberline {B.10}Captions}{32}{section.B.10}
-\contentsline {section}{\numberline {B.11}Hyperlinks}{32}{section.B.11}
-\contentsline {subsection}{\numberline {B.11.1}Basic setup}{32}{subsection.B.11.1}
-\contentsline {subsection}{\numberline {B.11.2}Hyperlinks and electronic publishing}{32}{subsection.B.11.2}
-\contentsline {subsection}{\numberline {B.11.3}Page number formatting in the index}{34}{subsection.B.11.3}
-\contentsline {subsection}{\numberline {B.11.4}Friendlier hyperlinks}{34}{subsection.B.11.4}
-\contentsline {section}{\numberline {B.12}Backreferences from the bibliography}{36}{section.B.12}
-\contentsline {section}{\numberline {B.13}Using the {\fontsize {0.9em}{1\baselineskip }\selectfont \unhbox \voidb@x \hbox {\textsf {bibentry}}} package}{36}{section.B.13}
-\contentsline {section}{\numberline {B.14}Fonts}{36}{section.B.14}
-\contentsline {section}{\numberline {B.15}Hanging punctuation}{37}{section.B.15}
-\contentsline {section}{\numberline {B.16}Paragraph breaks}{37}{section.B.16}
-\contentsline {section}{\numberline {B.17}Page breaks}{38}{section.B.17}
-\contentsline {section}{\numberline {B.18}Input encoding}{40}{section.B.18}
-\contentsline {section}{\numberline {B.19}\emph {{\fontsize {0.9em}{1\baselineskip }\selectfont \unhbox \voidb@x \hbox {\textsf {rtthesis}}}}\xspace and {\fontsize {0.9em}{1\baselineskip }\selectfont \unhbox \voidb@x \hbox {\textsf {natbib}}}}{40}{section.B.19}
-\contentsline {section}{\numberline {B.20}The lists of previous theses}{41}{section.B.20}
-\contentsline {section}{\numberline {B.21}Compilation theses}{42}{section.B.21}
-\contentsline {subsection}{\numberline {B.21.1}Including publications in your thesis}{42}{subsection.B.21.1}
-\contentsline {subsection}{\numberline {B.21.2}Compilation theses and bibliographies}{43}{subsection.B.21.2}
-\contentsline {section}{\numberline {B.22}Master's theses}{44}{section.B.22}
-\contentsline {subsection}{\numberline {B.22.1}Master's thesis setup}{44}{subsection.B.22.1}
-\contentsline {subsection}{\numberline {B.22.2}Special pages}{46}{subsection.B.22.2}
-\contentsline {subsection}{\numberline {B.22.3}Choice of language}{46}{subsection.B.22.3}
-\contentsline {section}{\numberline {B.23}Compiling the document}{47}{section.B.23}
-\contentsline {section}{\numberline {B.24}Generating a thesis cover and the \IeC {\textquotedblleft }spikblad\IeC {\textquotedblright }}{48}{section.B.24}
-\contentsline {section}{\numberline {B.25}Required logotypes (not included with \emph {{\fontsize {0.9em}{1\baselineskip }\selectfont \unhbox \voidb@x \hbox {\textsf {rtthesis}}}}\xspace )}{48}{section.B.25}
-\contentsline {section}{\numberline {B.26}Compatibility with standard packages}{49}{section.B.26}
-\contentsline {chapter}{Bibliography}{51}{appendix*.26}
-\contentsline {chapter}{Index}{54}{appendix*.26}
+\contentsline {section}{\numberline {2.3}Distance fields}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}Bezi\IeC {\'e}r curves}{5}{section.2.4}
+\contentsline {chapter}{\numberline {3}Related work}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Early EDT algorithms}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Exact EDT algorithms}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Improved distance measure for EDT algorithms}{11}{section.3.3}
+\contentsline {chapter}{\numberline {4}Method}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Distance field generation initial attempt}{13}{section.4.1}
+\contentsline {chapter}{\numberline {5}Resultat}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}Ditten}{15}{section.5.1}
+\contentsline {section}{\numberline {5.2}Framtiden}{15}{section.5.2}
+\contentsline {section}{\numberline {5.A}Ett par l\IeC {\r a}nga bevis}{18}{section.1.5.A}
+\contentsline {chapter}{\numberline {6}Avslutande kommentarer}{19}{chapter.6}
+\contentsline {chapter}{Bibliography}{21}{chapter*.9}
+\contentsline {chapter}{Index}{24}{chapter*.9}
 \select@language {swedish}
 \select@language {english}
 \select@language {english}
