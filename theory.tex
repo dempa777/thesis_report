@@ -9,11 +9,17 @@ When rendering a text it is really important that every glyph is positioned to e
 
 Without kerning it might be hard to get a good looking text if the font is not build in a way that kerning is not a factor. Kerning is displacement along the axis of the advancing direction of the text. A kerning value can be positive and negative and is a function of two parameters, the previous letter and the current letter. A negative kerning value is the most common and it means that the current glyph will be moved back in the advancing direction of the text and a positive value means that it will be moved forward. To get a better understanding of what kerning is take the strings ``AV'' and ``AA'' as an example. It is obvious that the left part of ``V'' is hanging above the ``A'' but that is not the case in the second string where ``A'' is followed by an ``A''. This is because the kerning table in the font has a negative entry for the combination ``AV'' but not for the combimation ``AA''. \citep{FreeTypeKern}
 
+\begin{figure}[H]
 \includegraphics[scale=0.25]{glyph_kerning}
+\caption{Illustration of how kerning works}
+\end{figure}
 
 Another important concepts when rendering text is baseline. A text can be placed on several different baselines on differente heights. The baselines used in this thesis work is top, hanging, middle, alphabetic, ideographic and bottom. The most commonly used baseline is the alphabetic baseline which is used when for example writing english text on a piece of paper.
 
+\begin{figure}[H]
 \includegraphics[scale=0.25]{glyph_baseline}
+\caption{Some baselines}
+\end{figure}
 
 \section{Distance fields}\label{distancefield}
 Binary images is used frequently in image processing \citep{Ragnemalm:1993}. A binary image is an image with only one binary value for each pixel. This will limit the image to only contain two values or colors. One example of an image that could be represented as a binary image is a picture of a white letter on a black background. In this case white would be represented as 0 and black as 1 or vice versa.
@@ -30,6 +36,11 @@ A beziér curve is defined in space or the plane as two endpoints and a number o
 	B(t) = (1 - t)^3P_0 + 3t(1 - t)^2P_1 + 3t^2(1 - t)P_2 + t^3P_3, 
 \end{math} \vspace{\baselineskip}\newline
 where \begin{math}t\in[0, 1], \end{math} \begin{math}P_0\end{math} and \begin{math}P_3\end{math} are the endpoints of the beziér and \begin{math}P_1\end{math} and \begin{math}P_2\end{math} are the control points of the beziér. The sum of the blending functions is always equal to 1 for any t in the function domain.\citep{PFNP}
+
+\begin{figure}[H]
+\includegraphics[scale=0.5]{bezier}
+\caption{A cubic beziér curve}
+\end{figure}
 
 A bezier curve can not represent arbitrary curves, therefore it is important to be able to connect several beziers to a path to be able to describe more complex shapes. When connecting curves, continuity between the curves is an important concept have in mind. Parametric continuity is a measure that will have grave importance of the appearance of the curve. There are three levels of parametric continuity.\vspace{\baselineskip}\newline
 \begin{math}C^0\end{math} = The curves meet\newline
@@ -48,46 +59,66 @@ De Casteljau’s algorithm can be used to subdivide a bezier curve recursively b
 	P_{123}=\frac{P_{12}+P_{23}}{2}\newline
 	P_{0123}=\frac{P_{012}+P_{123}}{2}
 \end{math}\vspace{\baselineskip}\newline
+\begin{figure}[H]
+\includegraphics[scale=0.5]{de_casteljaus}
+\caption{An illustration of the casteljau's algorithm splitting a cubic bezier at $t=0.5$}
+\end{figure}
 
+\section{Polygon filling}
+A polygon is a shape bound together by a finite number of line segments. Drawing polygons is what computer graphics is about but this does not make it a trivial problem. There is several algorithms for doing this where each one of them have their advantages and drawbacks. One algorithm used alot is the scan-line polygon fill algorithm. The algorithm contains two main components. The first component is a sorted edge table which is an array of linked lists where each linked list corresponds to a row in the image. The second component is an active edge list which is an initially empty linked list of edge references. The x value for the lowest y value of each line segment is inserted into the edge table. The next step in the algorithm is to iterate through the edge table row by row. All edges in the active edge list that ended on the previous line is removed. All remaining values of the active edge list is updated to the intersection between the line segment and the current row. All values of the current row in the edge table is then inserted into the active edge list and the active edge list is then sorted by x value. The image can now be filled for the current row by using some fill rule. The odd even fill rule is easy to use by just iterating through the active edge list and filling the pixels between every pair of edges starting with an odd edge.
 
+\begin{figure}[H]
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{polygon}
+  \caption{A case managed by odd even fill}\label{fig:awesome_image1}
+\endminipage\hfill
+\minipage{0.5\textwidth}
+  \includegraphics[width=\linewidth]{oddevenfillfail}
+  \caption{A case not managed by odd even fill}\label{fig:awesome_image2}
+\endminipage\hfill
+\end{figure}
+
+The odd even fill rule only work if edges can't cross eachother. If edges cross eachother there might be filled where it should not be filled and vice versa. An example of this can be seen in figureXXX
+where the odd even fill rule fails to fill the area in the middle. To handle this another fill rule can be used like the non-zero winding number rule. The property of this rule that makes it handle the case in the figure is that it also considers which direction the edges of the polygon are moving and increments a variable with different sign depending on that direction when crossing an edge.
 \chapter{Related work}\label{cha:relatedwork}
 \section{Early EDT algorithms}\label{earlyedt}
-In a very often mentioned article \citet{Danielsson} proposed an improved way to generate distance maps by representing the output of the distance transform as a vector, separating the distance of the different dimensions. Danielsson also proposed two sequential algorithms 4SED (4-point Sequential Euclidean Distance mapping) and 8SED (8-point Sequential Euclidean Distance mapping) for calculating the EDT using his representation of distance. Both the 4SED algorithm and the 8SED algorithm consists of 2 consecutive picture scans where they incrementally update pixel values depending on nearby pixels. The 8SED algorithm is described in the following pseudocode.\newpage
-
+In a very often mentioned article \citet{Danielsson} proposed an improved way to generate distance maps by representing the output of the distance transform as a vector, separating the distance of the different dimensions. Danielsson also proposed two sequential algorithms 4SED (4-point Sequential Euclidean Distance mapping) and 8SED (8-point Sequential Euclidean Distance mapping) for calculating the EDT using his representation of distance. Both the 4SED algorithm and the 8SED algorithm consists of 2 consecutive picture scans where they incrementally update pixel values depending on nearby pixels. The 8SED algorithm is described in the following pseudocode.\vspace{\baselineskip}\newline
 \begin{algorithm}[H]
-\KwData{M: Width, N: Height, L: Binary image of size MxN}
-\KwResult{L: Distance field}
-initialization\;
-\For{$j = 1$ to $N-1$ step $1$}{
-	\For{$i = 0$ to $M-1$ step $1$}{
-		L(i, j) = min(L(i, j), L(i-1, j-1)+(1, 1), L(i, j-1)+(0+1), L(i+1, j-1)+(1,1))\;
-	}
-	\For{$i = 1$ to $M-1$ step $1$}{
-		L(i, j) = min(L(i, j), L(i-1, j)+(1, 0))\;
-	}
-	\For{$i = M-2$ to $0$ step $1$}{
-		L(i, j) = min(L(i, j), L(i+1, j)+(1, 0))\;
-	}
-}
 \caption{First scan of the 8SED algorithm}
+\begin{algorithmic}
+\For{$j = 1 to N-1 step 1$}
+	\For{$i = 0 to M-1 step 1$}
+		\State L(i, j) = min(L(i, j), L(i-1, j-1)+(1, 1), L(i, j-1)+(0+1), L(i+1, j-1)+(1,1))\;
+	\EndFor
+	\For{$i = 1 to M-1 step 1$}
+		\State L(i, j) = min(L(i, j), L(i-1, j)+(1, 0))\;
+	\EndFor
+	\For{$i = M-2 to 0 step 1$}
+		\State L(i, j) = min(L(i, j), L(i+1, j)+(1, 0))\;
+	\EndFor
+\EndFor
+\end{algorithmic}
 \end{algorithm}
-\begin{algorithm}[H]
-\KwData{M: Width, N: Height, L: Binary image of size MxN}
-\KwResult{L: Distance field}
-initialization\;
-\For{$j = N-2$ to $0$ step $1$}{
-	\For{$i = 0$ to $M-1$ step $1$}{
-		L(i, j) = min(L(i, j), L(i-1, j+1)+(1, 1), L(i, j+1)+(0, 1), L(i+1, j+1)+(1, 1))\;
-	}
-	\For{$i = 1$ to $M-1$ step $1$}{
-		L(i, j) = min(L(i, j), L(i-1, j)+(1, 0))\;
-	}
-	\For{$i = M-2$ to $0$ step $1$}{
-		L(i, j) = min(L(i, j), L(i+1, j)+(1, 0))\;
-	}
-}
+\vspace{\baselineskip}
+\begin{algorithm}
 \caption{Second scan of the 8SED algorithm}
-\end{algorithm}
+\begin{algorithmic}[H]
+%\KwData{M: Width, N: Height, L: Binary image of size MxN}
+%\KwResult{L: Distance field}
+%initialization\;
+\For{$j = N-2$ to $0$ step $1$}
+	\For{$i = 0$ to $M-1$ step $1$}
+		\State L(i, j) = min(L(i, j), L(i-1, j+1)+(1, 1), L(i, j+1)+(0, 1), L(i+1, j+1)+(1, 1))\;
+	\EndFor
+	\For{$i = 1$ to $M-1$ step $1$}
+		\State L(i, j) = min(L(i, j), L(i-1, j)+(1, 0))\;
+	\EndFor
+	\For{$i = M-2$ to $0$ step $1$}
+		\State L(i, j) = min(L(i, j), L(i+1, j)+(1, 0))\;
+	\EndFor
+\EndFor
+\end{algorithmic}
+\end{algorithm}\vspace{\baselineskip}
 
 The two scans are very similar. The only difference is that the first scan is done top down evaluating the pixels below and on the sides of the current pixel and the second scan is done bottom up evaluating the pixels above and on the sides of the current pixel\citep{Ragnemalm:1993}. The 4SED algorithm and the 8SED algorithm are not error free as \citet{Danielsson} proves in his article but he also claims that the errors are rare and small and is negligible for practical purposes. In 8SED and 4SED every pixel is visited a constant number of times. This makes the time complexity of 8SED and 4SED trivially $\mathcal{O}(mn)$, if m and n are the width respectively the height of the input image.
 \section{Exact EDT algorithms}\label{exactEDT}

@@ -11,20 +11,25 @@
 \contentsline {section}{\numberline {2.1}Computer graphics}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Basic text rendering}{3}{section.2.2}
 \contentsline {section}{\numberline {2.3}Distance fields}{5}{section.2.3}
-\contentsline {section}{\numberline {2.4}Bezi\IeC {\'e}r curves}{5}{section.2.4}
-\contentsline {chapter}{\numberline {3}Related work}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Early EDT algorithms}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Exact EDT algorithms}{11}{section.3.2}
-\contentsline {section}{\numberline {3.3}Improved distance measure for EDT algorithms}{11}{section.3.3}
-\contentsline {chapter}{\numberline {4}Method}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Distance field generation initial attempt}{13}{section.4.1}
-\contentsline {chapter}{\numberline {5}Resultat}{15}{chapter.5}
-\contentsline {section}{\numberline {5.1}Ditten}{15}{section.5.1}
-\contentsline {section}{\numberline {5.2}Framtiden}{15}{section.5.2}
-\contentsline {section}{\numberline {5.A}Ett par l\IeC {\r a}nga bevis}{18}{section.1.5.A}
-\contentsline {chapter}{\numberline {6}Avslutande kommentarer}{19}{chapter.6}
-\contentsline {chapter}{Bibliography}{21}{chapter*.9}
-\contentsline {chapter}{Index}{24}{chapter*.9}
+\contentsline {section}{\numberline {2.4}Bezi\IeC {\'e}r curves}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}Polygon filling}{8}{section.2.5}
+\contentsline {chapter}{\numberline {3}Related work}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Early EDT algorithms}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Exact EDT algorithms}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}Improved distance measure for EDT algorithms}{13}{section.3.3}
+\contentsline {chapter}{\numberline {4}Method}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Distance field generation initial attempt}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Fast and approximate distance field generation}{16}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Bezier to line segment approximations}{16}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Drawing the glyph}{18}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Drawing distance gradients}{18}{subsection.4.2.3}
+\contentsline {chapter}{\numberline {5}Resultat}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Ditten}{23}{section.5.1}
+\contentsline {section}{\numberline {5.2}Framtiden}{23}{section.5.2}
+\contentsline {section}{\numberline {5.A}Ett par l\IeC {\r a}nga bevis}{26}{section.1.5.A}
+\contentsline {chapter}{\numberline {6}Avslutande kommentarer}{27}{chapter.6}
+\contentsline {chapter}{Bibliography}{29}{chapter*.17}
+\contentsline {chapter}{Index}{32}{chapter*.17}
 \select@language {swedish}
 \select@language {english}
 \select@language {english}

@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -156,6 +156,12 @@ Toyofumi Saito and Jun-Ichiro Toriwaki.
   n-dimensional digitized picture with applications.
 \newblock \emph{Pattern recognition}, 27\penalty0 (11):\penalty0 1551--1565,
   1994.
+
+\bibitem[Shemanarev(2005)]{bezier_subdivision}
+Maxim Shemanarev.
+\newblock Adaptive subdivision of bezier curves.
+\newblock 2005.
+\newblock URL \url{http://antigrain.com/research/adaptive_bezier/}.
 
 \bibitem[Shreiner et~al.(2009)Shreiner, Group, et~al.]{shreiner2009opengl}
 Dave Shreiner, Bill The Khronos OpenGL ARB~Working Group, et~al.
