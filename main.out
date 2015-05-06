@@ -6,27 +6,30 @@
 \BOOKMARK [0][]{thetocanchor.0}{Contents}{}% 6
 \BOOKMARK [0][]{section*.5}{Notation}{}% 7
 \BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 8
-\BOOKMARK [0][]{chapter.2}{2 Background}{}% 9
-\BOOKMARK [1][-]{section.2.1}{2.1 Computer graphics}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.2}{2.2 Basic text rendering}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.3}{2.3 Distance fields}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.4}{2.4 Bezi\351r curves}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.5}{2.5 Polygon filling}{chapter.2}% 14
-\BOOKMARK [0][]{chapter.3}{3 Related work}{}% 15
-\BOOKMARK [1][-]{section.3.1}{3.1 Early EDT algorithms}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.2}{3.2 Exact EDT algorithms}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.3}{3.3 Improved distance measure for EDT algorithms}{chapter.3}% 18
-\BOOKMARK [0][]{chapter.4}{4 Method}{}% 19
-\BOOKMARK [1][-]{section.4.1}{4.1 Distance field generation initial attempt}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.2}{4.2 Fast and approximate distance field generation}{chapter.4}% 21
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Bezier to line segment approximations}{section.4.2}% 22
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Drawing the glyph}{section.4.2}% 23
-\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Drawing distance gradients}{section.4.2}% 24
-\BOOKMARK [0][]{chapter.5}{5 Resultat}{}% 25
-\BOOKMARK [1][-]{section.5.1}{5.1 Ditten}{chapter.5}% 26
-\BOOKMARK [1][-]{section.5.2}{5.2 Framtiden}{chapter.5}% 27
-\BOOKMARK [1][-]{section.1.5.A}{5.A Ett par l\345nga bevis}{chapter.5}% 28
-\BOOKMARK [0][]{chapter.6}{6 Avslutande kommentarer}{}% 29
-\BOOKMARK [0][]{chapter*.17}{Bibliography}{}% 30
-\BOOKMARK [0][]{chapter*.17}{Index}{}% 31
-\BOOKMARK [0][]{Copyright.0}{Copyright}{}% 32
+\BOOKMARK [1][-]{section.1.1}{1.1 Problem formulation}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.2}{1.2 Report Structure}{chapter.1}% 10
+\BOOKMARK [0][]{chapter.2}{2 Background}{}% 11
+\BOOKMARK [1][-]{section.2.1}{2.1 Computer graphics}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.2}{2.2 Basic text rendering}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.3}{2.3 Distance fields}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.4}{2.4 Bezi\351r curves}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.5}{2.5 Polygon filling}{chapter.2}% 16
+\BOOKMARK [0][]{chapter.3}{3 Related work}{}% 17
+\BOOKMARK [1][-]{section.3.1}{3.1 Early EDT algorithms}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{3.2 Exact EDT algorithms}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{3.3 Improved distance measure for EDT algorithms}{chapter.3}% 20
+\BOOKMARK [0][]{chapter.4}{4 Method}{}% 21
+\BOOKMARK [1][-]{section.4.1}{4.1 Distance field generation initial attempt}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.2}{4.2 Fast and approximate distance field generation}{chapter.4}% 23
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Bezier to line segment approximations}{section.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Drawing the glyph}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Drawing distance gradients}{section.4.2}% 26
+\BOOKMARK [1][-]{section.4.3}{4.3 Distance field rendering}{chapter.4}% 27
+\BOOKMARK [0][]{chapter.5}{5 Resultat}{}% 28
+\BOOKMARK [1][-]{section.5.1}{5.1 Ditten}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.2}{5.2 Framtiden}{chapter.5}% 30
+\BOOKMARK [1][-]{section.1.5.A}{5.A Ett par l\345nga bevis}{chapter.5}% 31
+\BOOKMARK [0][]{chapter.6}{6 Avslutande kommentarer}{}% 32
+\BOOKMARK [0][]{chapter*.18}{Bibliography}{}% 33
+\BOOKMARK [0][]{chapter*.18}{Index}{}% 34
+\BOOKMARK [0][]{Copyright.0}{Copyright}{}% 35
