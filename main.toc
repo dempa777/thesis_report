@@ -19,20 +19,26 @@
 \contentsline {section}{\numberline {3.1}Early EDT algorithms}{11}{section.3.1}
 \contentsline {section}{\numberline {3.2}Exact EDT algorithms}{12}{section.3.2}
 \contentsline {section}{\numberline {3.3}Improved distance measure for EDT algorithms}{13}{section.3.3}
-\contentsline {chapter}{\numberline {4}Method}{15}{chapter.4}
+\contentsline {chapter}{\numberline {4}Methods for implementation}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Distance field generation initial attempt}{15}{section.4.1}
 \contentsline {section}{\numberline {4.2}Fast and approximate distance field generation}{16}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Bezier to line segment approximations}{16}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Bezi\IeC {\'e}r to line segment approximations}{16}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Drawing the glyph}{18}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Drawing distance gradients}{18}{subsection.4.2.3}
 \contentsline {section}{\numberline {4.3}Distance field rendering}{22}{section.4.3}
-\contentsline {chapter}{\numberline {5}Resultat}{25}{chapter.5}
-\contentsline {section}{\numberline {5.1}Ditten}{25}{section.5.1}
-\contentsline {section}{\numberline {5.2}Framtiden}{25}{section.5.2}
-\contentsline {section}{\numberline {5.A}Ett par l\IeC {\r a}nga bevis}{28}{section.1.5.A}
-\contentsline {chapter}{\numberline {6}Avslutande kommentarer}{29}{chapter.6}
-\contentsline {chapter}{Bibliography}{31}{chapter*.18}
-\contentsline {chapter}{Index}{34}{chapter*.18}
+\contentsline {subsection}{\numberline {4.3.1}Glyph positioning}{23}{subsection.4.3.1}
+\contentsline {chapter}{\numberline {5}Methods for evaluation of the implementation}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Visual evaluation \#1}{25}{section.5.1}
+\contentsline {section}{\numberline {5.2}Visual evaluation \#2}{26}{section.5.2}
+\contentsline {section}{\numberline {5.3}Performance evaluation}{26}{section.5.3}
+\contentsline {chapter}{\numberline {6}Result}{27}{chapter.6}
+\contentsline {section}{\numberline {6.1}Visual evaluation \#1}{27}{section.6.1}
+\contentsline {section}{\numberline {6.2}Visual evaluation \#2}{29}{section.6.2}
+\contentsline {section}{\numberline {6.3}Performance evaluation}{29}{section.6.3}
+\contentsline {chapter}{\numberline {7}Avslutande kommentarer}{31}{chapter.7}
+\contentsline {chapter}{\numberline {A}Result from visual evaluation \#1}{35}{appendix.A}
+\contentsline {chapter}{Bibliography}{39}{appendix*.30}
+\contentsline {chapter}{Index}{42}{appendix*.30}
 \select@language {swedish}
 \select@language {english}
 \select@language {english}

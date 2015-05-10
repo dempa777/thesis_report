@@ -1,4 +1,4 @@
-\backcite {FreeType}{{5}{2.2}{section.2.2}}
+\backcite {FreeType}{{4}{2.2}{section.2.2}}
 \backcite {OpenType}{{5}{2.2}{section.2.2}}
 \backcite {TrueType}{{5}{2.2}{section.2.2}}
 \backcite {FreeTypeKern}{{5}{2.2}{section.2.2}}
@@ -6,6 +6,7 @@
 \backcite {rosenfeld1966}{{6}{2.3}{section.2.3}}
 \backcite {Jones2006}{{7}{2.3}{section.2.3}}
 \backcite {PFNP}{{7}{2.4}{section.2.4}}
+\backcite {PFNP}{{8}{2.4}{figure.caption.10}}
 \backcite {phinney2001}{{8}{2.4}{figure.caption.10}}
 \backcite {shreiner2009opengl}{{8}{2.4}{figure.caption.10}}
 \backcite {xiaodiao}{{8}{2.4}{figure.caption.10}}
