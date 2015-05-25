@@ -1,14 +1,15 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: plainnat.bst
 A level-1 auxiliary file: acknowledgments.aux
-A level-1 auxiliary file: notation.aux
 A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: theory.aux
 A level-1 auxiliary file: method.aux
 A level-1 auxiliary file: resultat.aux
-A level-1 auxiliary file: avrundning.aux
+A level-1 auxiliary file: discussion.aux
+A level-1 auxiliary file: futurework.aux
+A level-1 auxiliary file: test_res.aux
 Database file #1: IEEEfull.bib
 Database file #2: myrefs.bib
 Warning--entry type for "OpenType" isn't style-file defined
@@ -24,7 +25,7 @@ Warning--empty publisher in PFNP
 Warning--empty journal in bezier_subdivision
 You've used 24 entries,
             2773 wiz_defined-function locations,
-            1171 strings with 20215 characters,
+            1172 strings with 20229 characters,
 and the built_in function-call counts, 10409 in all, are:
 = -- 976
 > -- 441

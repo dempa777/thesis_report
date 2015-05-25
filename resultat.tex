@@ -1,7 +1,7 @@
 \chapter{Result}\label{cha:Research}
-This chapter present the results of this thesis. To get a result three tests were run comparing the new implementation of text rendering with distance field with the old implementation. The three tests are described in the previous chapter. The font used for all the tests was Source Sans Pro which is an open source font originally developed by Adobe.
+This chapter present the results of this thesis. To get a result four tests were run comparing the new implementation of text rendering with distance field with the old implementation. The four tests are described in the previous chapter. The font used for all the tests was Source Sans Pro which is an open source font originally developed by Adobe. All the distance fields generated for the tests visual evaluation \#1, visual evaluation \#2 and performance evaluation were generated with the constant distance\_tolerance described in the method chapter set to $0.1$.
 \section{Visual evaluation \#1}\label{sec:research:history}
-The method described in the previous chapter under the section Visual evaluation \#1 involves comparing pixel values of rendered glyphs from the old text implementation and the in this thesis implemented text rendering solution. The test was performed on 10 different glyphs in two different distance field sizes.
+The method described in the previous chapter under the section Visual evaluation \#1 involves comparing pixel values of rendered glyphs from the old text implementation with the in this thesis implemented text rendering solution. The test was performed on ten different glyphs in two different distance field sizes.
 
 \begin{figure}[H]
 \minipage{0.3333333333333\textwidth}
@@ -31,7 +31,7 @@ The difference between the images with different distance field is significant. 
 There is a significant difference of the amount of error between glyphs rendered with 64x64 and 128x128 distance fields. It is well known that glyphs rendered with distance fields get rounded corners which this picture shows aswell, especially in the upper right corner of the right error image. The anti aliasing implementation of the old text rendering and the new is not the same. This might give possible errors around the edges of the glyph in the output image. The rest of the result images can be found in appendix A. 
 
 \section{Visual evaluation \#2}
-As described in the previous chapter the test Visual evaluation \#2 is done in the same way as Visual evaluation \#1 but output a different result. The result is a comparison between the equality of pixels between the both input images. The following table gives the result of the tests. 
+As described in the previous chapter the test Visual evaluation \#2 was done in the same way as Visual evaluation \#1 but with a different output. The result is a comparison between the equality of pixels between the both input images. The following table gives the result of the tests. 
 \begin{table}[H]
 \caption{Results of visual evaluation \#2}
 % title of Table
@@ -65,7 +65,7 @@ a & 3.19\% & 0.75\% \\
 
 The table shows that almost every glyph gets better at the higher distance field size. The average pixel error is 2.81\% for the 64x64 distance field size test and 1.04\% for the 128x128 distance field size test. The only glyph that had less error at the smaller distance field size was the swedish letter Å. The reason for this special case might be different sub pixel alignment of the glyphs rendered by the the two implementations.
 \section{Performance evaluation}
-As mentioned in the previous chapter the method for testing the performance of the distance field text rendering implementation was measuring the time for generating the distance field. The test was run with three different mobile device iphone4, samsung galaxy tab 1 and samsung S6. The glyphs included in the test were a-ö, A-Ö, 0-9 and some other commonly used glyphs. The test was run 1 time each on the samsung galaxy tab 1 and the samsung s6. The test was run 5 times on the iphone4 because the time measure on the iphone was not as stable and reliable as the time measure on the samsung devices.
+As mentioned in the previous chapter the method for testing the performance of the distance field text rendering implementation was measuring the time for generating the distance field. The test was run with three different mobile device iphone4, samsung galaxy tab 1 and samsung S6. The glyphs included in the test were a-ö, A-Ö, 0-9 and some other commonly used glyphs. The test was run one time each on the samsung galaxy tab 1 and the samsung s6. The test was run five times on the iphone4 because the time measure on the iphone was not as stable and reliable as the time measure on the samsung devices. In table \ref{table:perfeval} the average generation time for all the tests on the different devices are presented.
 
 \begin{table}[H]
 \caption{Results of performance evaluation}
@@ -91,7 +91,63 @@ Iphone4 \#5 & 0.0025 s & 0.0057 s \\ [1ex]
 \hline
 %inserts single line
 \end{tabular}
-\label{table:nonlin}
+\label{table:perfeval}
 % is usedto refer this table in the text
 \end{table}
-The Samsung S6 was the device generating the distance fields fastest with an average of 0.002 seconds with 64x64 distance field and 0.0069 seconds with 128x128 distance fields.
+The Samsung S6 was the device generating the distance fields fastest with an average of 0.002 seconds with 64x64 distance field and 0.0069 seconds with 128x128 distance fields. All the results from the test including generation times for each glyph on every device are presented in appendix B.
+\section{Distance tolerance evaluation}
+The test distance tolerance evaluation was run on a Samsung S6 rendering the glyph O. The distance field size for this test was contant and set to 128x128. Figure \ref{fig:disttolout} present some of the output images of the test.
+
+\begin{figure}[H]
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{dist_tol1280}
+\endminipage\hfill
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{dist_tol10}
+\endminipage\hfill
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{dist_tol05}
+\endminipage\hfill
+\minipage{0.25\textwidth}
+  \includegraphics[width=\linewidth]{dist_tol01}
+\endminipage\hfill
+\caption{Some of the output images from the test distance tolerance evaluation. From the left the value of the distance\_tolerance are $128.0$, $1.0$, $0.5$ and $0.1$.}\label{fig:disttolout}
+\end{figure} 
+
+An important result of this test is how the distance field generation time is connected with the value of the value of the distance\_tolerance. Table \ref{table:dist_tol} present the distance field generation times for the test.
+
+\begin{table}[H]
+\caption{Results of performance evaluation}
+% title of Table
+\centering
+% used for centering table
+\begin{tabular}{c c}
+% centered columns (4 columns)
+\hline
+\hline %inserts double horizontal lines
+Value & Time\\ [0.5ex] % inserts table
+%heading
+\hline
+% inserts single horizontal line
+128.0 	&	0.009545 s  \\
+1.0 	&	0.009559 s  \\
+0.9 	&	0.009113 s  \\
+0.8 	&	0.009112 s  \\
+0.7 	&	0.009132 s  \\
+0.6 	&	0.009296 s  \\
+0.5 	&	0.010477 s  \\
+0.4 	&	0.011286 s  \\
+0.3 	&	0.010185 s  \\
+0.2 	&	0.011947 s  \\
+0.1 	&	0.016554 s  \\
+0.05 	&	0.017990 s  \\
+0.01 	&	0.033086 s  \\ [1ex]
+% [1ex] adds vertical space
+\hline
+%inserts single line
+\end{tabular}
+\label{table:dist_tol}
+% is usedto refer this table in the text
+\end{table}
+
+As the table show the distance field generation time is stable around 10 ms for most of the value of distance\_tolerance. For low values of distance tolerance the distance field generation time increases fast.

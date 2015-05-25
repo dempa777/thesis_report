@@ -14,6 +14,7 @@
 \usepackage{mythesis}
 \usepackage{algpseudocode}
 \usepackage{algorithm}
+\usepackage{tabularx}
 \algrenewcommand\textproc{}% Used to be \textsc, gives camelcase functions in algoritmic
 \usepackage{amsmath}
 
@@ -32,14 +33,15 @@
 \end{abstract}
 \include{acknowledgments}
 \tableofcontents
-\include{notation}
+%\include{notation}
 
 \mainmatter
 \include{introduction}
 \include{theory}
 \include{method}
 \include{resultat}
-\include{avrundning}
+\include{discussion}
+\include{futurework}
 
 \part*{Appendix}
 \appendix
@@ -49,6 +51,6 @@
 \backmatter
 \bibliography{IEEEfull,myrefs}
 
-\printindex
+%\printindex
 
 \end{document}

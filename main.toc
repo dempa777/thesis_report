@@ -5,10 +5,9 @@
 \select@language {english}
 \select@language {english}
 \select@language {english}
-\contentsline {chapter}{Notation}{ix}{section*.5}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Problem formulation}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Report Structure}{1}{section.1.2}
+\contentsline {section}{\numberline {1.2}Structure}{1}{section.1.2}
 \contentsline {chapter}{\numberline {2}Background}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Computer graphics}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Basic text rendering}{4}{section.2.2}
@@ -24,21 +23,26 @@
 \contentsline {section}{\numberline {4.2}Fast and approximate distance field generation}{16}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Bezi\IeC {\'e}r to line segment approximations}{16}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Drawing the glyph}{18}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Drawing distance gradients}{18}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3}Drawing distance gradients}{19}{subsection.4.2.3}
 \contentsline {section}{\numberline {4.3}Distance field rendering}{22}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Glyph positioning}{23}{subsection.4.3.1}
 \contentsline {chapter}{\numberline {5}Methods for evaluation of the implementation}{25}{chapter.5}
 \contentsline {section}{\numberline {5.1}Visual evaluation \#1}{25}{section.5.1}
 \contentsline {section}{\numberline {5.2}Visual evaluation \#2}{26}{section.5.2}
 \contentsline {section}{\numberline {5.3}Performance evaluation}{26}{section.5.3}
+\contentsline {section}{\numberline {5.4}Distance tolerance evaluation}{26}{section.5.4}
 \contentsline {chapter}{\numberline {6}Result}{27}{chapter.6}
 \contentsline {section}{\numberline {6.1}Visual evaluation \#1}{27}{section.6.1}
 \contentsline {section}{\numberline {6.2}Visual evaluation \#2}{29}{section.6.2}
 \contentsline {section}{\numberline {6.3}Performance evaluation}{29}{section.6.3}
-\contentsline {chapter}{\numberline {7}Avslutande kommentarer}{31}{chapter.7}
-\contentsline {chapter}{\numberline {A}Result from visual evaluation \#1}{35}{appendix.A}
-\contentsline {chapter}{Bibliography}{39}{appendix*.30}
-\contentsline {chapter}{Index}{42}{appendix*.30}
+\contentsline {section}{\numberline {6.4}Distance tolerance evaluation}{30}{section.6.4}
+\contentsline {chapter}{\numberline {7}Discussion and conclusions}{33}{chapter.7}
+\contentsline {section}{\numberline {7.1}Result}{33}{section.7.1}
+\contentsline {section}{\numberline {7.2}Method}{36}{section.7.2}
+\contentsline {chapter}{\numberline {8}Future work}{37}{chapter.8}
+\contentsline {chapter}{\numberline {A}Result from visual evaluation \#1}{41}{appendix.A}
+\contentsline {chapter}{\numberline {B}Result from performance evaluation}{45}{appendix.B}
+\contentsline {chapter}{\numberline {C}Result from distance tolerance evaluation}{51}{appendix.C}
+\contentsline {chapter}{Bibliography}{53}{appendix*.36}
 \select@language {swedish}
 \select@language {english}
 \select@language {english}
