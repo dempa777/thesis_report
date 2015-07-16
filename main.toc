@@ -13,36 +13,37 @@
 \contentsline {section}{\numberline {2.2}Basic text rendering}{4}{section.2.2}
 \contentsline {section}{\numberline {2.3}Distance fields}{6}{section.2.3}
 \contentsline {section}{\numberline {2.4}Bezi\IeC {\'e}r curves}{7}{section.2.4}
-\contentsline {section}{\numberline {2.5}Polygon filling}{9}{section.2.5}
-\contentsline {chapter}{\numberline {3}Related work}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Early EDT algorithms}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Exact EDT algorithms}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}Improved distance measure for EDT algorithms}{13}{section.3.3}
-\contentsline {chapter}{\numberline {4}Methods for implementation}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Distance field generation initial attempt}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Fast and approximate distance field generation}{16}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Bezi\IeC {\'e}r to line segment approximations}{16}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Drawing the glyph}{18}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Drawing distance gradients}{19}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Distance field rendering}{22}{section.4.3}
-\contentsline {chapter}{\numberline {5}Methods for evaluation of the implementation}{25}{chapter.5}
-\contentsline {section}{\numberline {5.1}Visual evaluation \#1}{25}{section.5.1}
-\contentsline {section}{\numberline {5.2}Visual evaluation \#2}{26}{section.5.2}
-\contentsline {section}{\numberline {5.3}Performance evaluation}{26}{section.5.3}
-\contentsline {section}{\numberline {5.4}Distance tolerance evaluation}{26}{section.5.4}
-\contentsline {chapter}{\numberline {6}Result}{27}{chapter.6}
-\contentsline {section}{\numberline {6.1}Visual evaluation \#1}{27}{section.6.1}
-\contentsline {section}{\numberline {6.2}Visual evaluation \#2}{29}{section.6.2}
-\contentsline {section}{\numberline {6.3}Performance evaluation}{29}{section.6.3}
-\contentsline {section}{\numberline {6.4}Distance tolerance evaluation}{30}{section.6.4}
-\contentsline {chapter}{\numberline {7}Discussion and conclusions}{33}{chapter.7}
-\contentsline {section}{\numberline {7.1}Result}{33}{section.7.1}
-\contentsline {section}{\numberline {7.2}Method}{36}{section.7.2}
-\contentsline {chapter}{\numberline {8}Future work}{37}{chapter.8}
-\contentsline {chapter}{\numberline {A}Result from visual evaluation \#1}{41}{appendix.A}
-\contentsline {chapter}{\numberline {B}Result from performance evaluation}{45}{appendix.B}
-\contentsline {chapter}{\numberline {C}Result from distance tolerance evaluation}{51}{appendix.C}
-\contentsline {chapter}{Bibliography}{53}{appendix*.36}
+\contentsline {section}{\numberline {2.5}Polygon filling}{10}{section.2.5}
+\contentsline {chapter}{\numberline {3}Related work}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Early EDT algorithms}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Exact EDT algorithms}{14}{section.3.2}
+\contentsline {section}{\numberline {3.3}Improved distance measure for EDT algorithms}{15}{section.3.3}
+\contentsline {chapter}{\numberline {4}Methods for implementation}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Distance field generation initial attempt}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Fast and approximate distance field generation}{18}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Bezi\IeC {\'e}r to line segment approximations}{18}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Drawing the glyph}{20}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Drawing distance gradients}{21}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Distance field rendering}{24}{section.4.3}
+\contentsline {chapter}{\numberline {5}Methods for evaluation of the implementation}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Visual evaluation 1}{27}{section.5.1}
+\contentsline {section}{\numberline {5.2}Visual evaluation 2}{28}{section.5.2}
+\contentsline {section}{\numberline {5.3}Performance evaluation}{28}{section.5.3}
+\contentsline {section}{\numberline {5.4}Distance tolerance evaluation}{28}{section.5.4}
+\contentsline {chapter}{\numberline {6}Result}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}Visual evaluation 1}{29}{section.6.1}
+\contentsline {section}{\numberline {6.2}Visual evaluation 2}{31}{section.6.2}
+\contentsline {section}{\numberline {6.3}Performance evaluation}{31}{section.6.3}
+\contentsline {section}{\numberline {6.4}Distance tolerance evaluation}{32}{section.6.4}
+\contentsline {chapter}{\numberline {7}Discussion and conclusions}{35}{chapter.7}
+\contentsline {section}{\numberline {7.1}Result}{35}{section.7.1}
+\contentsline {section}{\numberline {7.2}Method}{38}{section.7.2}
+\contentsline {section}{\numberline {7.3}Memory}{38}{section.7.3}
+\contentsline {chapter}{\numberline {8}Future work}{41}{chapter.8}
+\contentsline {chapter}{\numberline {A}Result from visual evaluation \#1}{45}{appendix.A}
+\contentsline {chapter}{\numberline {B}Result from performance evaluation}{49}{appendix.B}
+\contentsline {chapter}{\numberline {C}Result from distance tolerance evaluation}{55}{appendix.C}
+\contentsline {chapter}{Bibliography}{57}{appendix*.37}
 \select@language {swedish}
 \select@language {english}
 \select@language {english}

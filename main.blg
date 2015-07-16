@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2014)
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: plainnat.bst
@@ -13,55 +13,56 @@ A level-1 auxiliary file: test_res.aux
 Database file #1: IEEEfull.bib
 Database file #2: myrefs.bib
 Warning--entry type for "OpenType" isn't style-file defined
---line 36 of file myrefs.bib
+--line 43 of file myrefs.bib
 Warning--entry type for "TrueType" isn't style-file defined
---line 44 of file myrefs.bib
+--line 51 of file myrefs.bib
 Warning--entry type for "FreeType" isn't style-file defined
---line 52 of file myrefs.bib
+--line 59 of file myrefs.bib
 Warning--entry type for "FreeTypeKern" isn't style-file defined
---line 68 of file myrefs.bib
+--line 75 of file myrefs.bib
 Warning--empty journal in gustavson20122d
+Warning--empty journal in exactedtragnemalm
 Warning--empty publisher in PFNP
 Warning--empty journal in bezier_subdivision
-You've used 24 entries,
+You've used 25 entries,
             2773 wiz_defined-function locations,
-            1172 strings with 20229 characters,
-and the built_in function-call counts, 10409 in all, are:
-= -- 976
-> -- 441
-< -- 23
-+ -- 157
-- -- 132
-* -- 754
-:= -- 1566
-add.period$ -- 93
-call.type$ -- 24
-change.case$ -- 114
-chr.to.int$ -- 23
-cite$ -- 51
-duplicate$ -- 519
-empty$ -- 948
-format.name$ -- 166
-if$ -- 2248
+            1175 strings with 20327 characters,
+and the built_in function-call counts, 10706 in all, are:
+= -- 1001
+> -- 451
+< -- 24
++ -- 161
+- -- 135
+* -- 769
+:= -- 1614
+add.period$ -- 96
+call.type$ -- 25
+change.case$ -- 118
+chr.to.int$ -- 24
+cite$ -- 54
+duplicate$ -- 538
+empty$ -- 978
+format.name$ -- 170
+if$ -- 2309
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 22
-newline$ -- 144
-num.names$ -- 96
-pop$ -- 254
+missing$ -- 23
+newline$ -- 149
+num.names$ -- 100
+pop$ -- 265
 preamble$ -- 1
-purify$ -- 91
+purify$ -- 94
 quote$ -- 0
-skip$ -- 389
+skip$ -- 402
 stack$ -- 0
-substring$ -- 400
+substring$ -- 402
 swap$ -- 72
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 249
-warning$ -- 3
-while$ -- 99
+type$ -- 260
+warning$ -- 4
+while$ -- 102
 width$ -- 0
-write$ -- 346
-(There were 7 warnings)
+write$ -- 357
+(There were 8 warnings)

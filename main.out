@@ -25,21 +25,22 @@
 \BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Drawing distance gradients}{section.4.2}% 25
 \BOOKMARK [1][-]{section.4.3}{4.3 Distance field rendering}{chapter.4}% 26
 \BOOKMARK [0][]{chapter.5}{5 Methods for evaluation of the implementation}{}% 27
-\BOOKMARK [1][-]{section.5.1}{5.1 Visual evaluation \0431}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.2}{5.2 Visual evaluation \0432}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.1}{5.1 Visual evaluation 1}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.2}{5.2 Visual evaluation 2}{chapter.5}% 29
 \BOOKMARK [1][-]{section.5.3}{5.3 Performance evaluation}{chapter.5}% 30
 \BOOKMARK [1][-]{section.5.4}{5.4 Distance tolerance evaluation}{chapter.5}% 31
 \BOOKMARK [0][]{chapter.6}{6 Result}{}% 32
-\BOOKMARK [1][-]{section.6.1}{6.1 Visual evaluation \0431}{chapter.6}% 33
-\BOOKMARK [1][-]{section.6.2}{6.2 Visual evaluation \0432}{chapter.6}% 34
+\BOOKMARK [1][-]{section.6.1}{6.1 Visual evaluation 1}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.2}{6.2 Visual evaluation 2}{chapter.6}% 34
 \BOOKMARK [1][-]{section.6.3}{6.3 Performance evaluation}{chapter.6}% 35
 \BOOKMARK [1][-]{section.6.4}{6.4 Distance tolerance evaluation}{chapter.6}% 36
 \BOOKMARK [0][]{chapter.7}{7 Discussion and conclusions}{}% 37
 \BOOKMARK [1][-]{section.7.1}{7.1 Result}{chapter.7}% 38
 \BOOKMARK [1][-]{section.7.2}{7.2 Method}{chapter.7}% 39
-\BOOKMARK [0][]{chapter.8}{8 Future work}{}% 40
-\BOOKMARK [0][]{appendix.A}{A Result from visual evaluation \0431}{}% 41
-\BOOKMARK [0][]{appendix.B}{B Result from performance evaluation}{}% 42
-\BOOKMARK [0][]{appendix.C}{C Result from distance tolerance evaluation}{}% 43
-\BOOKMARK [0][]{appendix*.36}{Bibliography}{}% 44
-\BOOKMARK [0][]{Copyright.0}{Copyright}{}% 45
+\BOOKMARK [1][-]{section.7.3}{7.3 Memory}{chapter.7}% 40
+\BOOKMARK [0][]{chapter.8}{8 Future work}{}% 41
+\BOOKMARK [0][]{appendix.A}{A Result from visual evaluation \0431}{}% 42
+\BOOKMARK [0][]{appendix.B}{B Result from performance evaluation}{}% 43
+\BOOKMARK [0][]{appendix.C}{C Result from distance tolerance evaluation}{}% 44
+\BOOKMARK [0][]{appendix*.37}{Bibliography}{}% 45
+\BOOKMARK [0][]{Copyright.0}{Copyright}{}% 46

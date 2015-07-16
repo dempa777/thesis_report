@@ -1,7 +1,7 @@
 \chapter{Result}\label{cha:Research}
-This chapter present the results of this thesis. To get a result four tests were run comparing the new implementation of text rendering with distance field with the old implementation. The four tests are described in the previous chapter. The font used for all the tests was Source Sans Pro which is an open source font originally developed by Adobe. All the distance fields generated for the tests visual evaluation \#1, visual evaluation \#2 and performance evaluation were generated with the constant distance\_tolerance described in the method chapter set to $0.1$.
-\section{Visual evaluation \#1}\label{sec:research:history}
-The method described in the previous chapter under the section Visual evaluation \#1 involves comparing pixel values of rendered glyphs from the old text implementation with the in this thesis implemented text rendering solution. The test was performed on ten different glyphs in two different distance field sizes.
+This chapter present the results of this thesis. To get a result four tests were run comparing the new implementation of text rendering with distance field with the old implementation. The four tests are described in the previous chapter. The font used for all the tests was Source Sans Pro which is an open source font originally developed by Adobe. All the distance fields generated for the tests visual evaluation 1, visual evaluation 2 and performance evaluation were generated with the constant distance\_tolerance described in the method chapter set to $0.1$.
+\section{Visual evaluation 1}
+The method described in \ref{viseval1} involves comparing pixel values of rendered glyphs from the old text rendering implementation with the text rendering solution implemented in this thesis. The test was performed on ten different glyphs in two different distance field sizes.
 
 \begin{figure}[H]
 \minipage{0.3333333333333\textwidth}
@@ -25,15 +25,15 @@ The difference between the images with different distance field is significant. 
 \minipage{0.4\textwidth}
   \includegraphics[width=\linewidth]{test_ressmally128}
 \endminipage\hfill
-\caption{The result of the test visual evaluation \#1. The picture to the left is a comparison between renderering with the old implementation and the new implementation with distance field size 64x64 and the picture to the right is a comparison between rendering with the old implementation and the new implementation with distance field size 128x128.}\label{fig:awesome_image2}
+\caption{The result of the test Visual evaluation 1. The picture to the left is a comparison between renderering with the old implementation and the new implementation with distance field size 64x64 and the picture to the right is a comparison between rendering with the old implementation and the new implementation with distance field size 128x128.}\label{fig:awesome_image2}
 \end{figure}
 
 There is a significant difference of the amount of error between glyphs rendered with 64x64 and 128x128 distance fields. It is well known that glyphs rendered with distance fields get rounded corners which this picture shows aswell, especially in the upper right corner of the right error image. The anti aliasing implementation of the old text rendering and the new is not the same. This might give possible errors around the edges of the glyph in the output image. The rest of the result images can be found in appendix A. 
 
-\section{Visual evaluation \#2}
-As described in the previous chapter the test Visual evaluation \#2 was done in the same way as Visual evaluation \#1 but with a different output. The result is a comparison between the equality of pixels between the both input images. The following table gives the result of the tests. 
+\section{Visual evaluation 2}
+As described in \ref{viseval2} the test Visual evaluation 2 was done in the same way as Visual evaluation 1 but with a different output. The result is a comparison between the equality of pixels between the both input images. The following table gives the result of the tests. 
 \begin{table}[H]
-\caption{Results of visual evaluation \#2}
+\caption{Results of visual evaluation 2}
 % title of Table
 \centering
 % used for centering table
@@ -65,7 +65,7 @@ a & 3.19\% & 0.75\% \\
 
 The table shows that almost every glyph gets better at the higher distance field size. The average pixel error is 2.81\% for the 64x64 distance field size test and 1.04\% for the 128x128 distance field size test. The only glyph that had less error at the smaller distance field size was the swedish letter Å. The reason for this special case might be different sub pixel alignment of the glyphs rendered by the the two implementations.
 \section{Performance evaluation}
-As mentioned in the previous chapter the method for testing the performance of the distance field text rendering implementation was measuring the time for generating the distance field. The test was run with three different mobile device iphone4, samsung galaxy tab 1 and samsung S6. The glyphs included in the test were a-ö, A-Ö, 0-9 and some other commonly used glyphs. The test was run one time each on the samsung galaxy tab 1 and the samsung s6. The test was run five times on the iphone4 because the time measure on the iphone was not as stable and reliable as the time measure on the samsung devices. In table \ref{table:perfeval} the average generation time for all the tests on the different devices are presented.
+As mentioned in \ref{pereval} the method for testing the performance of the distance field text rendering implementation was measuring the time for generating the distance field. The test was run with three different mobile device iphone4, samsung galaxy tab 1 and samsung S6. The glyphs included in the test were a-ö, A-Ö, 0-9 and some other commonly used glyphs. The test was run one time each on the samsung galaxy tab 1 and the samsung s6. The test was run five times on the iphone4 because the time measure on the iphone was not as stable and reliable as the time measure on the samsung devices. In table \ref{table:perfeval} the average generation time for all the tests on the different devices are presented.
 
 \begin{table}[H]
 \caption{Results of performance evaluation}
@@ -114,10 +114,10 @@ The test distance tolerance evaluation was run on a Samsung S6 rendering the gly
 \caption{Some of the output images from the test distance tolerance evaluation. From the left the value of the distance\_tolerance are $128.0$, $1.0$, $0.5$ and $0.1$.}\label{fig:disttolout}
 \end{figure} 
 
-An important result of this test is how the distance field generation time is connected with the value of the value of the distance\_tolerance. Table \ref{table:dist_tol} present the distance field generation times for the test.
+An important result of this test is how the distance field generation time is connected with the value of the distance\_tolerance. Table \ref{table:dist_tol} present the distance field generation times for the test.
 
 \begin{table}[H]
-\caption{Results of performance evaluation}
+\caption{Results of the distance tolerance evaluation}
 % title of Table
 \centering
 % used for centering table

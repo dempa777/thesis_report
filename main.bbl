@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -132,6 +132,12 @@ Arnold Meijster, Jos~BTM Roerdink, and Wim~H Hesselink.
 Thomas~W Phinney.
 \newblock Truetype, postscript type 1, \& opentype: What’s the difference,
   2001.
+
+\bibitem[Ragnemalm(1989)]{exactedtragnemalm}
+Ingemar Ragnemalm.
+\newblock The euclidean distance transform and its implementation on simd
+  architectures.
+\newblock 1989.
 
 \bibitem[Ragnemalm(1993)]{Ragnemalm:1993}
 Ingemar Ragnemalm.
